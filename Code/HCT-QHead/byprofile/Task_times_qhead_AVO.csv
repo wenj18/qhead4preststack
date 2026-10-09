@@ -1,0 +1,5 @@
+Profile,device,time
+profile_s1,gpu,1.3903
+profile_s2,gpu,0.882
+profile_s3,gpu,0.914
+profile_s4,gpu,0.9182

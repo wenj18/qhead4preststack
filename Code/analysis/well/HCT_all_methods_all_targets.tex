@@ -1,0 +1,42 @@
+\begin{table}[htp]
+\centering
+\caption{Performance comparison of different methods for elastic-parameter prediction.}
+\label{tab:model_compare_all_targets}
+\renewcommand{\arraystretch}{1.10}
+\setlength{\tabcolsep}{3pt}
+\resizebox{\columnwidth}{!}{
+    \begin{tabular}{cclcccc}
+        \toprule
+        Parameter & Method & Dataset & RMSRE & PCC & PICP(\%) & MPIW \\
+        \midrule
+        \multirow{6}{*}{Density} & \multirow{3}{*}{HCT-PHead} & Training & 0.0170 & 0.9602 & -- & -- \\
+         &  & Validation & 0.0118 & 0.9721 & -- & -- \\
+         &  & Blind test & 0.0141 & 0.9700 & -- & -- \\
+        \cmidrule(lr){2-7}
+         & \multirow{3}{*}{HCT-QHead} & Training & 0.0123 & 0.9726 & 95.11 & 0.1868 \\
+         &  & Validation & 0.0104 & 0.9791 & 97.77 & 0.1871 \\
+         &  & Blind test & 0.0102 & 0.9789 & 98.39 & 0.1888 \\
+
+        \midrule
+
+        \multirow{6}{*}{P-impedance} & \multirow{3}{*}{HCT-PHead} & Training & 0.0519 & 0.9698 & -- & -- \\
+         &  & Validation & 0.0479 & 0.9757 & -- & -- \\
+         &  & Blind test & 0.0571 & 0.9677 & -- & -- \\
+        \cmidrule(lr){2-7}
+         & \multirow{3}{*}{HCT-QHead} & Training & 0.0277 & 0.9870 & 96.61 & 0.1144 \\
+         &  & Validation & 0.0344 & 0.9833 & 93.58 & 0.1176 \\
+         &  & Blind test & 0.0313 & 0.9841 & 93.88 & 0.1138 \\
+
+        \midrule
+
+        \multirow{6}{*}{S-impedance} & \multirow{3}{*}{HCT-PHead} & Training & 0.0532 & 0.9653 & -- & -- \\
+         &  & Validation & 0.0456 & 0.9733 & -- & -- \\
+         &  & Blind test & 0.0581 & 0.9632 & -- & -- \\
+        \cmidrule(lr){2-7}
+         & \multirow{3}{*}{HCT-QHead} & Training & 0.0314 & 0.9844 & 96.12 & 0.1195 \\
+         &  & Validation & 0.0359 & 0.9829 & 94.32 & 0.1224 \\
+         &  & Blind test & 0.0358 & 0.9807 & 93.54 & 0.1190 \\
+        \bottomrule
+    \end{tabular}
+}
+\end{table}
